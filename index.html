@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="description"
+    content="Online calculator for quick calculations, along with a large collection of calculators on math, finance, fitness, and more, each with in-depth information.">
+  <meta name="keywords"
+    content=" math calculator , calculator , easy & simple calculator , caculator high-speed , mini-calculator">
+  <meta name="author " content=" Yogeshwar Mohare">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="centercalcy">
+    
+    <form name="calcy">
+      <h2> calculators</h2> 
+
+
+      <input type="text" name="answer" id="display-answer">
+      <div class="layer2" onclick ="efg ()">
+
+        <input type="button" id="clearbtn" value="c" onclick="calcy.answer.value =''">
+
+
+        <input type="button" name="" value="=" onclick="calcy.answer.value = eval (calcy.answer.value )" id="clearbtn">
+
+
+      </div>
+
+
+
+
+      <div class="layer1"  onclick ="abc ()">
+
+        <input type="button" class="main-num" value="7" onclick="calcy.answer.value +='7'">
+        <input type="button" class="main-num" value="8" onclick="calcy.answer.value +='8'">
+        <input type="button" class="main-num" value="9" onclick="calcy.answer.value +='9'">
+        <input type="button" class="main-num2" value="*" onclick="calcy.answer.value +='*'">
+
+      </div>
+
+
+      <div class="layer1"  onclick ="abc ()">
+
+        <input type="button" class="main-num" value="4" onclick="calcy.answer.value +='4'">
+        <input type="button" class="main-num" value="5" onclick="calcy.answer.value +='5'">
+        <input type="button" class="main-num" value="6" onclick="calcy.answer.value +='6'">
+        <input type="button" class="main-num2" value="-" onclick="calcy.answer.value +='-'">
+
+      </div>
+
+
+      <div class="layer1 "  onclick ="abc ()">
+
+        <input type="button" class="main-num" value="1" onclick="calcy.answer.value +='1'">
+        <input type="button" class="main-num" value="2" onclick="calcy.answer.value +='2'">
+        <input type="button" class="main-num" value="3" onclick="calcy.answer.value +='3'">
+        <input type="button" class="main-num2" value="+" onclick="calcy.answer.value +='+'">
+
+      </div>
+
+
+      <div class="layer1"  onclick ="abc ()" >
+
+        <input type="button" class="main-num2" value="." onclick="calcy.answer.value +='.'">
+        <input type="button" class="main-num2" value="0" onclick="calcy.answer.value +='0'">
+        <input type="button" class="main-num2" value="%" onclick="calcy.answer.value +='%'">
+        <input type="button" class="main-num2" value="/" onclick="calcy.answer.value +='/'">
+
+      </div>
+      
+    </form>
+
+  </div>
+
+  <script>
+
+    function abc() {
+      document.getElementById("display-answer").style.background = "pink";
+     
+    };
+
+    function efg() {
+      document.getElementById("display-answer").style.background = "white";
+     
+    };
+    
+    
+  </script>
+
+
+
+
+</body>
+
+</html>
